@@ -2,7 +2,7 @@ import { getAllPhotos } from "@/lib/img-data";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const photos = await getAllPhotos();
+  const data = await getAllPhotos();
 
-  return NextResponse.json(photos);
+  return NextResponse.json(data);
 }
